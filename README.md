@@ -1,7 +1,7 @@
 # Builder.io + Next.js Starter
 A starter based off of the [Builder.io + Next.js minimal starter](https://github.com/BuilderIO/builder/tree/main/examples/next-js-simple) with some additional features:
 - Custom heading component
-- Previewing area for symbols
+- Previewing area for symbols and a sample section model
 
 ## Instructions
 Clone or fork this repo. Replace the public API key with your own in the files: `.env.development` and `.env.production`

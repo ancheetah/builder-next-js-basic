@@ -1,10 +1,10 @@
 import { Builder } from "@builder.io/react";
 import React from 'react';
 
-export const Heading = (props: { title: string; }) => {
+export const Heading = (props: { title: string; color: string; }) => {
   return(
     <h1 style={{
-        'color': '#AC7EF4',
+        'color': props.color,
         'fontFamily': 'sans-serif',
     }}>
         {props.title}
@@ -18,7 +18,13 @@ Builder.registerComponent(Heading, {
     {
       name: "title",
       type: "text",
-      defaultValue: 'I am a heading!'
+      defaultValue: 'I am a heading!',
+      required: true,
+    },
+    {
+      name: "color",
+      type: "color",
+      defaultValue: '#AC7EF4',
     },
   ],
 });
